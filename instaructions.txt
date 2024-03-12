@@ -1,0 +1,15 @@
+--Install Node.js
+
+Install Node.js from the official website
+
+---Install Azure Functions Core Tools globally using npm::
+
+npm install -g azure-functions-core-tools@4 --unsafe-perm true
+-- Create a new Azure Function app:
+func init MyFunctionApp --worker-runtime node
+
+--Navigate to your function app directory:
+cd MyFunctionApp
+
+--Create a new function:
+func new --name MyHttpFunction --template "HTTP trigger"
